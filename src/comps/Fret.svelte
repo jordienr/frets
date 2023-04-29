@@ -7,7 +7,7 @@
   export let note: Note;
   export let index: number;
   export let stringNumber: 0 | 1 | 2 | 3 | 4 | 5;
-  let showNoteVal;
+  let showNoteVal = false;
 
   showNotes.subscribe((val) => {
     showNoteVal = val;
@@ -26,7 +26,7 @@
       ' fret relative py-2 w-24 hover:bg-blue-50 transition-all text-sm border-r'}"
 >
   <span
-    class="{(showNoteVal ? 'opacity-0 ' : 'opacity-100 ') +
+    class="{(showNoteVal ? 'opacity-100 ' : 'opacity-0 ') +
       'z-10 bg-gradient-to-b from-slate-700 to-slate-900 text-slate-200 font-mono relative rounded-full w-6 h-6 mx-auto flex items-center justify-center text-xs'}"
   >
     {note}

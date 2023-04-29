@@ -68,6 +68,7 @@
                 name="showNotes"
                 class="w-5 h-5"
                 type="checkbox"
+                checked="{false}"
                 on:change="{() => showNotes.update((val) => !val)}"
               />
               <label for="showNotes">Show notes </label>
