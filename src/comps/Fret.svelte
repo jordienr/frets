@@ -21,9 +21,9 @@
 <button
   on:click="{onClick}"
   class="{index === 0
-    ? 'bg-gray-700 w-10 text-white'
+    ? 'bg-gray-700 w-10 text-white sticky left-0'
     : 'bg-white' +
-      ' fret relative py-2 w-24 hover:bg-blue-50 transition-all text-sm border-r'}"
+      ' fret w-full relative py-2 hover:bg-blue-50 transition-all text-sm border-r'}"
 >
   <span
     class="{(showNoteVal ? 'opacity-100 ' : 'opacity-0 ') +

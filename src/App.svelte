@@ -34,9 +34,9 @@
           >⚙️</button
         >
       </div>
-      <div class="flex flex-col items-center gap-8 pt-24">
+      <div class="pt-12">
         <h1
-          class="text-4xl bg-gradient-to-b from-slate-700 to-black font-bold w-24 h-24 rounded-3xl shadow-sm flex justify-center items-center text-slate-100 border-[0.5px]"
+          class="text-2xl bg-gradient-to-b from-slate-700 to-black font-bold w-16 h-16 rounded-full mx-auto shadow-sm flex justify-center items-center text-slate-100"
         >
           {currentNoteValue}
         </h1>
@@ -79,7 +79,9 @@
             >
           </div>
         {/if}
-        <Fretboard length="{length}" />
+        <div class="mt-8">
+          <Fretboard length="{length}" />
+        </div>
       </div>
     {/if}
   </main>

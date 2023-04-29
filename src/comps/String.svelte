@@ -13,7 +13,7 @@
   }
 </script>
 
-<div class="flex overflow-auto">
+<div class="flex w-full">
   {#each Array.from({ length: length + 1 }) as _, i}
     <Fret
       note="{getNoteByNumber(i)}"
