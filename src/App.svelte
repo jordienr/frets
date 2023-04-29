@@ -30,8 +30,8 @@
       <div class="p-2 flex justify-end">
         <button
           on:click="{() => (showOptions = !showOptions)}"
-          class="bg-gradient-to-b from-white to-slate-50 font-semibold text-slate-600 text-sm px-4 py-1.5 rounded-md border-[0.5px] border-slate-300 shadow-sm"
-          >Settings</button
+          class=" font-semibold text-slate-600 h-8 w-8 text-2xl rounded-full"
+          >⚙️</button
         >
       </div>
       <div class="flex flex-col items-center gap-8 pt-24">
@@ -85,6 +85,7 @@
   </main>
 
   <footer class="flex p-4 justify-end items-end gap-4 text-blue-600 underline">
+    <a href="https://github.com/jordienr/frets" target="_blank"> Code </a>
     <a href="https://twitter.com/jordienr" target="_blank"> @jordienr </a>
     <a href="https://jordienric.com">jordienric.com</a>
   </footer>
