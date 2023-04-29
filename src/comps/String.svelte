@@ -6,7 +6,7 @@
 
   export let firstNote: Note;
   export let length: number;
-  export let stringNumber: 1 | 2 | 3 | 4 | 5 | 6;
+  export let stringNumber: 0 | 1 | 2 | 3 | 4 | 5;
 
   function getNoteByNumber(n: number) {
     return notes[(notes.indexOf(firstNote) + n) % notes.length];

@@ -1,12 +1,12 @@
 <!-- @format -->
 <script lang="ts">
-  import { checkAnswer } from "../store";
+  import { checkAnswer } from "../stores/store";
   import type { Note } from "../types/Note";
-  import { showNotes } from "../store";
+  import { showNotes } from "../stores/store";
 
   export let note: Note;
   export let index: number;
-  export let stringNumber: 1 | 2 | 3 | 4 | 5 | 6;
+  export let stringNumber: 0 | 1 | 2 | 3 | 4 | 5;
   let showNoteVal;
 
   showNotes.subscribe((val) => {
@@ -14,7 +14,7 @@
   });
 
   function onClick() {
-    checkAnswer(note, stringNumber);
+    checkAnswer(note, stringNumber, index);
   }
 </script>
 

@@ -1,9 +1,9 @@
 <!-- @format -->
 <script lang="ts">
   import Fretboard from "./comps/Fretboard.svelte";
-  import Icon from "./comps/Icon.svelte";
-  import { currentNote, loading } from "./store";
-  import { showNotes } from "./store";
+  import Notifs from "./comps/Notifs.svelte";
+  import { currentNote, loading } from "./stores/store";
+  import { showNotes } from "./stores/store";
 
   let currentNoteValue;
   let loadingValue = true;
@@ -19,7 +19,8 @@
 </script>
 
 <div class=" bg-slate-100 min-h-screen">
-  <main>
+  <Notifs />
+  <main class="min-h-screen">
     {#if loadingValue}
       <div class="p-24">
         <p class="font-bold">Loading guitar sounds...</p>
@@ -82,14 +83,9 @@
     {/if}
   </main>
 
-  <footer class="flex justify-center h-40 mt-32 items-end">
-    <a
-      href="https://twitter.com/jordienr"
-      target="_blank"
-      class=" text-blue-600 font-semibold bg-blue-100 flex gap-2 p-1 px-3 rounded-md border border-blue-300"
-    >
-      @jordienr
-    </a>
+  <footer class="flex p-4 justify-end items-end gap-4 text-blue-600 underline">
+    <a href="https://twitter.com/jordienr" target="_blank"> @jordienr </a>
+    <a href="https://jordienric.com">jordienric.com</a>
   </footer>
 </div>
 
